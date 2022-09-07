@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+
+    <title>Hello, world!</title>
+
+    <style>
+        .align{
+            
+    position: relative;
+    padding: 1rem;
+    margin: 3rem 23rem 0;
+    padding: 3rem;
+    border: solid #000000;
+    border-width: 1px;
+    background-color: aliceblue;
+    border-radius: 1rem;
+        
+}
+
+
+    </style>
+  </head>
+  <body>
+
+    <div class="align">
+
+        <legend style="text-align: center;">Validation Form</legend><br>
+
+        <form id="formValidate" style="text-align: left;">
+            <p>
+                <label>Name<b>&nbsp (Required, atleast 2 characters)</b></label>
+                <input name="name" value="" type="text" minlength="2" id="cname"required>
+            </p>
+            
+            <p>
+                <label>Email<b>&nbsp (Required, won't be published)</b></label>
+                <input name="email" value="" type="email"  minlength="2" id="c_email" required>
+            </p>
+            
+            <p>
+                <label>URL<b>&nbsp optional</b></label>
+                <input name="url" value="" type="url"  minlength="2" id="c_url">
+            </p>
+            
+            <p>
+                <label>Any Comments<b> &nbsp Required</b></label>
+                <input name="comment" value="" type="text" minlength="2" id="c_comment" required>
+            </p>
+            
+            <p>
+                <input type="submit" value="submit" class="submit">
+            </p>
+          </form>
+    </div>
+      
+    
+
+  
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/jquery-validation@1.19.3/dist/jquery.validate.js"></script>
+
+    <script>
+        $(document).ready(function(){
+            $("#formValidate").validate()
+        })
+    </script>
+    
+  </body>
+</html>
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
